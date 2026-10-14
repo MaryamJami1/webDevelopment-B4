@@ -287,3 +287,93 @@ console.log(text7.split("a"));
 
 let greet = "Hello ";
 console.log(greet.repeat(10));
+
+
+
+
+// Number Data type
+let age = "20";
+let price = 1500;
+let percentage = 85.5;
+let temperature = -10;
+
+console.log(typeof(age));
+console.log(typeof(price));
+console.log(typeof(percentage));
+console.log(typeof(temperature));
+
+
+// Arithemetic Operators
+// addition +
+
+let num1 = 10
+let num2 = 5
+let num3 = 20
+let num4 = 60
+
+let result = num1 + num2 + num3 + num4
+   //operands  //operator //operands 
+console.log(result);
+
+//subtarction
+
+let num5 = 10
+let num6 = 5
+let num7 = 20
+let num8 = 60
+
+let result2 = num5 - num6 - num7 - num8
+   //operands  //operator //operands 
+console.log(result2);
+
+//multiplication
+
+let num9 = 2
+let num10 = 4
+let num11 = 6
+console.log(num9 * num10 * num11);
+
+
+// division
+let num12 = 20
+let num13 = 4
+console.log(num12 / num13);
+
+
+// modulus
+let num14 = 20
+let num15 = 3
+console.log(num14 % num15);
+
+
+// exponention
+let num16 = 4
+let num17 = 2
+let num18 = 6
+console.log(num16 ** num17 ** num18);
+
+
+
+
+
+let num19 = "twenty" // not allow
+let num20 = "20"   //type conversion
+
+console.log("100" + 100 );   //concatination
+console.log("100" + "100"); //concatination
+console.log("100" - 100  ); //string chnage into number (type conversion)
+console.log("100" - "50"); //string change into number(type conversion)
+console.log("100" * 2 ); //string change into number(type conversion)
+console.log("100" / 2); //string change into number(type conversion)
+console.log("100" % 3 ); //string change into number(type conversion)
+console.log("100" - "hundred");// Invalid numeric String
+console.log("Hello" * 2 ); //Invalid numeric String
+console.log("10" + 5 - 5 ); //Left-to-right Concatenation
+console.log(10 + 5 + "5");  //string
+
+
+
+
+
+
+
