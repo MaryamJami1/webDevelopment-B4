@@ -306,16 +306,16 @@ console.log(typeof(temperature));
 // Arithemetic Operators
 // addition +
 
-let num1 = 10
-let num2 = 5
-let num3 = 20
-let num4 = 60
+// let num1 = 10
+// let num2 = 5
+// let num3 = 20
+// let num4 = 60
 
-let result = num1 + num2 + num3 + num4
-   //operands  //operator //operands 
-console.log(result);
+// let result = num1 + num2 + num3 + num4
+//    //operands  //operator //operands 
+// console.log(result);
 
-//subtarction
+// //subtarction
 
 let num5 = 10
 let num6 = 5
@@ -373,7 +373,137 @@ console.log(10 + 5 + "5");  //string
 
 
 
+// number methods
+// toFixed()
+let price2 = 99.5872;
+// console.log(price2);
+console.log(price2.toFixed(2));
+
+// string
+let price3 = 26
+console.log(typeof(price3));
+console.log(typeof(price3.toString()));
 
 
 
+// isInteger
+// console.log(Number.isInteger(price3));      //true
+// console.log(Number.isInteger(20.5));    //false
+// console.log(Number.isInteger(-10));     //true
+// console.log(Number.isInteger("20"));    //false
+// console.log(Number.isInteger(20.0));     //true 
+
+
+
+
+// console.log(Number.isNaN(100));     //false
+// console.log(isNaN("hello"));    //true
+// console.log(Number.isNaN(100 - "Hello"));
+//                               // NAN
+
+
+// // Math.round()
+// // console.log(Math.round(7.256)); 
+// // console.log(Math.round(8.556));
+// // console.log(Math.round(10.856));
+
+// // Math.ceil
+// // console.log(Math.ceil(4.0));
+// // console.log(Math.ceil(4.56));
+// // console.log(Math.ceil(4.94));
+// // console.log(Math.ceil(4));
+
+
+// console.log(Math.floor(8.1));
+// console.log(Math.floor(9.5));
+// console.log(Math.floor(13.9));
+// console.log(Math.floor(6.0));
+
+
+
+
+// // let value = 9
+// // value = value + 1
+// // console.log(value);
+
+
+// // // increament operator
+// // let value2 = 9
+// // // value = value + 1
+// // value2++
+// // console.log(value2);
+
+
+// // let value3 = 9
+// // value3 = value3 - 1
+// // console.log(value3);
+
+// // // decreament operator
+// let value4 = 9
+// // value3 = value3 - 1
+// value4--
+// console.log(value4);
+
+
+// let a = 5;
+// console.log(a++);  //5
+// console.log(a++);//6
+// console.log(a);//7
+
+
+// let b = 5;
+// console.log(++b);//6
+// console.log(++b);//7
+// console.log(b);//7
+
+
+
+// // post increament
+// let c = 5;
+// console.log(c);  //5
+
+// let d = c++;
+// console.log(c); //6
+// console.log(d); //5
+
+// // d ko purani value mili, jabke c increase ho gaya.
+
+// // pre increaemnt
+// let e = 5;
+// console.log(e);    //5
+
+// let f = ++e;      //6
+// console.log(e);   //6
+// console.log(f)    //6
+
+
+
+
+// // post decreament
+
+// let g = 10;
+// console.log(g--); //10
+// console.log(g);   //9
+
+
+
+// // pre decreament
+
+// let h = 10;
+// console.log(--h); //9
+// console.log(h);   //9
+
+
+
+
+let a = 3; //4
+let b = 2; //3
+let result = a++ + ++b + a;
+            //3 + 3 + 4
+            //6 + 4
+            //10
+
+console.log(a);
+console.log(b);
+console.log(result);
 
