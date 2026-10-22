@@ -601,10 +601,40 @@ console.log(1 == true); // true
 // conditions
 // if else
 
-let age3 = +prompt("Enter your age for voting!")
+// let age3 = +prompt("Enter your age for voting!")
 
-if(age3 >= 18){
-   alert("you are eligilbe for voting!")
-}else{
-   alert("you are not eligilbe for voting!")
+// if(age3 >= 18){
+//    alert("you are eligilbe for voting!")
+// }else{
+//    alert("you are not eligilbe for voting!")
+// }
+
+
+
+
+let maryam = prompt("Order your food")
+
+
+if(maryam === "biryani"){
+console.log("Biryani ly kar ghr ajao!");
 }
+else if(maryam === "pizza"){
+console.log("pizza ly kar ghr ajao!");
+} 
+else if(maryam === "burger"){
+console.log("burger ly kar ghr ajao!");
+}
+else{
+console.log("ghr ao ammi se pitwaungi");
+}
+
+
+// if(){
+
+// }else if(){
+
+// }else if(){
+   
+// }else{
+
+// }
