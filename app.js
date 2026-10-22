@@ -507,3 +507,104 @@ console.log(a);
 console.log(b);
 console.log(result);
 
+
+
+
+
+
+let grade = 400
+// grade = grade + 100
+grade += 100
+console.log(grade);
+
+
+
+
+
+
+let grade2 = 400
+// grade = grade - 100
+grade2 -= 100
+console.log(grade2);
+
+
+
+
+
+let grade3 = 400
+// grade = grade * 100
+grade3 *= 100
+console.log(grade3);
+
+
+
+let grade4 = 400
+// grade = grade / 100
+grade4 /= 100
+console.log(grade4);
+
+
+let num = 10;  //15
+
+num += 5;
+console.log(num);   //15
+
+num -= 3;
+console.log(num);  // 12
+
+num *= 2;
+console.log(num);  //24
+
+num /= 4;
+console.log(num);  //6
+
+
+
+
+
+// comparison operators
+
+
+// let marks = 75;
+
+// console.log(marks > 50);
+// console.log(marks < 50);
+// console.log(marks >= 75);
+// console.log(marks <= 70);
+// console.log(marks === 75);
+
+
+
+// console.log(5 != "5");     //false 
+// console.log(5 !== "5");  //true
+// console.log(10 != 20);    //true
+// console.log(10 !== 10);  //false
+
+
+console.log(0 == false);     //true
+console.log(0 === false);     //false
+console.log("10" > 5);       //true
+console.log("20" < "3");   //true
+console.log(20 < 3);  //false
+console.log(null == undefined);  //true
+console.log(null === undefined);  //false
+console.log(1 == true); // true
+
+
+
+
+
+
+
+
+
+// conditions
+// if else
+
+let age3 = +prompt("Enter your age for voting!")
+
+if(age3 >= 18){
+   alert("you are eligilbe for voting!")
+}else{
+   alert("you are not eligilbe for voting!")
+}
