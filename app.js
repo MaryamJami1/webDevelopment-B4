@@ -119,20 +119,20 @@
 let studentName = "Fatima"
 console.log(studentName);
 
-console.log(typeof(studentName));
+console.log(typeof (studentName));
 
 
 // number
 let rollNo = 34678
 console.log(rollNo);
-console.log(typeof(rollNo));
+console.log(typeof (rollNo));
 
 
 // boolean true and false 
 
 let isMaried = false
 // console.log(isMaried);
-console.log(typeof(isMaried));
+console.log(typeof (isMaried));
 
 
 // let addition = true
@@ -144,14 +144,14 @@ console.log(typeof(isMaried));
 
 let car;
 console.log(car);
-console.log(typeof(car) );
+console.log(typeof (car));
 
- //undefine
+//undefine
 
 let shop = null;
 console.log(shop);
 //null
-console.log(typeof(shop) );
+console.log(typeof (shop));
 
 
 
@@ -195,7 +195,7 @@ let aliAge = 20
 
 //  my name is ali and i am 20 years old!
 console.log("My name is" + " " + name + " " + "and i am" + " " + aliAge + " " + "years old!");
-console.log(`My name is ${name} and i am ${aliAge} years old` );
+console.log(`My name is ${name} and i am ${aliAge} years old`);
 
 
 
@@ -228,7 +228,7 @@ console.log(subject[subject.length]);
 
 // String methods
 
-let car2= "civic"
+let car2 = "civic"
 let uppercase2 = car2.toUpperCase() //CIVIC
 
 
@@ -246,18 +246,18 @@ console.log(message.includes("!"));
 
 
 let text = "Hello  World";
-            //0123456 
-console.log(text.indexOf("World")); 
+//0123456 
+console.log(text.indexOf("World"));
 
 
 let sentence = "i LOVE JavaScript"
-console.log(sentence.slice(2,6));
+console.log(sentence.slice(2, 6));
 
 let text1 = "I like cats";
-let text2 = text1.replace("cats","dogs");
+let text2 = text1.replace("cats", "dogs");
 console.log(text2);
 
-console.log(text2.replace("like","love"));
+console.log(text2.replace("like", "love"));
 
 
 
@@ -271,7 +271,7 @@ console.log(text4.trim());
 
 
 let text5 = "Hello";
-console.log(text5.charAt(0));  
+console.log(text5.charAt(0));
 console.log(text5.charAt(3));
 
 
@@ -297,10 +297,10 @@ let price = 1500;
 let percentage = 85.5;
 let temperature = -10;
 
-console.log(typeof(age));
-console.log(typeof(price));
-console.log(typeof(percentage));
-console.log(typeof(temperature));
+console.log(typeof (age));
+console.log(typeof (price));
+console.log(typeof (percentage));
+console.log(typeof (temperature));
 
 
 // Arithemetic Operators
@@ -323,7 +323,7 @@ let num7 = 20
 let num8 = 60
 
 let result2 = num5 - num6 - num7 - num8
-   //operands  //operator //operands 
+//operands  //operator //operands 
 console.log(result2);
 
 //multiplication
@@ -359,16 +359,16 @@ console.log(num16 ** num17 ** num18);
 let num19 = "twenty" // not allow
 let num20 = "20"   //type conversion
 
-console.log("100" + 100 );   //concatination
+console.log("100" + 100);   //concatination
 console.log("100" + "100"); //concatination
-console.log("100" - 100  ); //string chnage into number (type conversion)
+console.log("100" - 100); //string chnage into number (type conversion)
 console.log("100" - "50"); //string change into number(type conversion)
-console.log("100" * 2 ); //string change into number(type conversion)
+console.log("100" * 2); //string change into number(type conversion)
 console.log("100" / 2); //string change into number(type conversion)
-console.log("100" % 3 ); //string change into number(type conversion)
+console.log("100" % 3); //string change into number(type conversion)
 console.log("100" - "hundred");// Invalid numeric String
-console.log("Hello" * 2 ); //Invalid numeric String
-console.log("10" + 5 - 5 ); //Left-to-right Concatenation
+console.log("Hello" * 2); //Invalid numeric String
+console.log("10" + 5 - 5); //Left-to-right Concatenation
 console.log(10 + 5 + "5");  //string
 
 
@@ -381,8 +381,8 @@ console.log(price2.toFixed(2));
 
 // string
 let price3 = 26
-console.log(typeof(price3));
-console.log(typeof(price3.toString()));
+console.log(typeof (price3));
+console.log(typeof (price3.toString()));
 
 
 
@@ -499,9 +499,9 @@ console.log(typeof(price3.toString()));
 let a = 3; //4
 let b = 2; //3
 let result = a++ + ++b + a;
-            //3 + 3 + 4
-            //6 + 4
-            //10
+//3 + 3 + 4
+//6 + 4
+//10
 
 console.log(a);
 console.log(b);
@@ -612,29 +612,55 @@ console.log(1 == true); // true
 
 
 
-let maryam = prompt("Order your food")
+// let maryam = prompt("Order your food")
 
 
-if(maryam === "biryani"){
-console.log("Biryani ly kar ghr ajao!");
-}
-else if(maryam === "pizza"){
-console.log("pizza ly kar ghr ajao!");
-} 
-else if(maryam === "burger"){
-console.log("burger ly kar ghr ajao!");
-}
-else{
-console.log("ghr ao ammi se pitwaungi");
-}
+// if (maryam === "biryani") {
+//    console.log("Biryani ly kar ghr ajao!");
+// }
+// else if (maryam === "pizza") {
+//    console.log("pizza ly kar ghr ajao!");
+// }
+// else if (maryam === "burger") {
+//    console.log("burger ly kar ghr ajao!");
+// }
+// else {
+//    console.log("ghr ao ammi se pitwaungi");
+// }
 
 
+// multiple conditions
 // if(){
 
 // }else if(){
 
 // }else if(){
-   
+
 // }else{
 
 // }
+
+
+
+
+
+
+// Nested Conditions
+// let card = "IDcard"
+// let pen = "pencil"
+
+// if (pen === "pen") {
+//    if (card === "IDcard") {
+// alert("you can enter the class")
+//    }
+//    else {
+// alert("you can not enter the class because ypu have not a id card" )
+//    }
+// } else {
+//    alert("you have not a pen!")
+
+// }
+
+
+// logical opeartors
+// or and not
