@@ -664,3 +664,86 @@ console.log(1 == true); // true
 
 // logical opeartors
 // or and not
+
+
+let age5 = 18
+let cnic = true
+let no = +92
+
+// true    &&     true =   true
+if (age5 >= 18 && cnic == true && no == +92) {
+    console.log("eligible");
+
+} else {
+    console.log(" not eligible");
+}
+
+
+
+// let age7 = 20;
+// let hasCNIC = true;
+// let isBanned = true; 
+      
+// if (age >= 18 && hasCNIC || !isBanned) { 
+//     console.log("Entry Allowed");
+// } else {
+//     console.log("Entry Denied");
+// }
+
+
+
+let marks = 90
+let winner = false
+
+if(marks >= 90 || winner == true){
+console.log("scholorship approved");
+}else{
+console.log("scholorship not approved");
+}
+
+
+                //true      ||   true = true
+                //true       ||   false = true
+console.log((!false && true) || !true );
+
+
+// non primitive
+// Array    // for storing multiple values
+let students = ["ali" , "saad" , "sara" , "ahmed"]
+console.log(students);
+console.log(students[2]);
+students[2] = "fatima"
+console.log(students);
+
+
+
+
+
+// const fruits = ["Apple", "Mango",,"Banana", "Orange"];
+// console.log(fruits[2]);
+// fruits[2]= "Grapes"
+// // console.log(fruits);
+// fruits = ["guava" , "updated fruits"]
+// console.log(fruits);
+
+
+// console.log(fruits[0][2])
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
+// fruits.length = 0
+// console.log(fruits);
+
+// console.log(fruits[fruits.length -3]); 
+
+
+// nested Array
+let nested = ["box1" , ["box2" , "box2 sister" , ["kiwi" , "banana"]], "box3" , [1 , 2 ,3 , 4 ,5] , true]
+
+
+
+
+
+
+
+
