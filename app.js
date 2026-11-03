@@ -683,7 +683,7 @@ if (age5 >= 18 && cnic == true && no == +92) {
 // let age7 = 20;
 // let hasCNIC = true;
 // let isBanned = true; 
-      
+
 // if (age >= 18 && hasCNIC || !isBanned) { 
 //     console.log("Entry Allowed");
 // } else {
@@ -695,21 +695,21 @@ if (age5 >= 18 && cnic == true && no == +92) {
 let marks = 90
 let winner = false
 
-if(marks >= 90 || winner == true){
-console.log("scholorship approved");
-}else{
-console.log("scholorship not approved");
+if (marks >= 90 || winner == true) {
+    console.log("scholorship approved");
+} else {
+    console.log("scholorship not approved");
 }
 
 
-                //true      ||   true = true
-                //true       ||   false = true
-console.log((!false && true) || !true );
+//true      ||   true = true
+//true       ||   false = true
+console.log((!false && true) || !true);
 
 
 // non primitive
 // Array    // for storing multiple values
-let students = ["ali" , "saad" , "sara" , "ahmed"]
+let students = ["ali", "saad", "sara", "ahmed"]
 console.log(students);
 console.log(students[2]);
 students[2] = "fatima"
@@ -738,12 +738,69 @@ console.log(students);
 
 
 // nested Array
-let nested = ["box1" , ["box2" , "box2 sister" , ["kiwi" , "banana"]], "box3" , [1 , 2 ,3 , 4 ,5] , true]
+let nested = ["box1", ["box2", "box2 sister", ["kiwi", "banana"]], "box3", [1, 2, 3, 4, 5], true]
 
 
 
 
 
+let fruits = ["Apple", "Mango"];
+
+console.log(fruits.push("orange" , "grapes"));  //  4
+console.log(fruits); // apple mango orange grapes
+console.log(fruits.pop()); //grapes
+console.log(fruits.pop()); ////orange
+console.log(fruits);  // apple mango 
 
 
 
+
+
+let fruits2 = ["Mango", "Banana"];
+console.log(fruits2.unshift("Apple" , "guava"));     //4
+console.log(fruits2);  // apple guava mango bannana
+
+
+let fruits3 = ["Apple", "Mango", "Banana"];
+let removed = fruits3.shift();
+console.log(fruits3);
+console.log(removed);
+
+
+
+
+let words = ["I", "Love", "JavaScript"];
+let str = words.join(" ") /// i love javascript
+let revert = str.split("a") ////// i love j , v , script
+                                
+console.log(words);    //array
+console.log(str);     //string 
+console.log(revert);  //array i 
+
+
+
+
+for(let i = 1; i <= 200; i++){
+console.log("hello");
+
+
+
+}
+
+
+
+for(let i = 1; i <= 100; i++){
+console.log(`2 x ${i} = ${2*i}`);
+
+}
+
+
+let fruitsarr = ["Apple", "Mango", "Banana", "Orange" , "kivi" ,"guava"]; //6 5
+
+// for(let i = 5; i < fruitsarr.length -1; i--){
+// console.log(fruitsarr[i]);
+// }
+
+for(let i = fruitsarr.length -1; i >= 0 ; i--){
+console.log(fruitsarr[i]);
+}
