@@ -797,10 +797,36 @@ console.log(`2 x ${i} = ${2*i}`);
 
 let fruitsarr = ["Apple", "Mango", "Banana", "Orange" , "kivi" ,"guava"]; //6 5
 
-// for(let i = 5; i < fruitsarr.length -1; i--){
-// console.log(fruitsarr[i]);
-// }
-
 for(let i = fruitsarr.length -1; i >= 0 ; i--){
 console.log(fruitsarr[i]);
 }
+
+
+// let student = {
+//     name: "Ali",
+//     age: 20,
+//     class: 10,
+//     city: "Karachi",
+// };
+
+// console.log(student);
+// console.log(student.city);
+// console.log(student["age"]);
+
+
+let student = {
+    name: "Ali",
+    age: 20,
+    isStudent: true,
+    marks: 85,
+    subjects: ["English", "Math", "Computer"],
+    address: {
+        city : "Islamabad",
+        country: "pakistan"
+    }
+};
+
+console.log(student)
+console.log(student.subjects[1]);
+console.log(student.address["country"]);
+
