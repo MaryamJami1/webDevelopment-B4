@@ -746,7 +746,7 @@ let nested = ["box1", ["box2", "box2 sister", ["kiwi", "banana"]], "box3", [1, 2
 
 let fruits = ["Apple", "Mango"];
 
-console.log(fruits.push("orange" , "grapes"));  //  4
+console.log(fruits.push("orange", "grapes"));  //  4
 console.log(fruits); // apple mango orange grapes
 console.log(fruits.pop()); //grapes
 console.log(fruits.pop()); ////orange
@@ -757,7 +757,7 @@ console.log(fruits);  // apple mango
 
 
 let fruits2 = ["Mango", "Banana"];
-console.log(fruits2.unshift("Apple" , "guava"));     //4
+console.log(fruits2.unshift("Apple", "guava"));     //4
 console.log(fruits2);  // apple guava mango bannana
 
 
@@ -772,7 +772,7 @@ console.log(removed);
 let words = ["I", "Love", "JavaScript"];
 let str = words.join(" ") /// i love javascript
 let revert = str.split("a") ////// i love j , v , script
-                                
+
 console.log(words);    //array
 console.log(str);     //string 
 console.log(revert);  //array i 
@@ -780,8 +780,8 @@ console.log(revert);  //array i
 
 
 
-for(let i = 1; i <= 200; i++){
-console.log("hello");
+for (let i = 1; i <= 200; i++) {
+    console.log("hello");
 
 
 
@@ -789,16 +789,16 @@ console.log("hello");
 
 
 
-for(let i = 1; i <= 100; i++){
-console.log(`2 x ${i} = ${2*i}`);
+for (let i = 1; i <= 100; i++) {
+    console.log(`2 x ${i} = ${2 * i}`);
 
 }
 
 
-let fruitsarr = ["Apple", "Mango", "Banana", "Orange" , "kivi" ,"guava"]; //6 5
+let fruitsarr = ["Apple", "Mango", "Banana", "Orange", "kivi", "guava"]; //6 5
 
-for(let i = fruitsarr.length -1; i >= 0 ; i--){
-console.log(fruitsarr[i]);
+for (let i = fruitsarr.length - 1; i >= 0; i--) {
+    console.log(fruitsarr[i]);
 }
 
 
@@ -821,7 +821,7 @@ let student = {
     marks: 85,
     subjects: ["English", "Math", "Computer"],
     address: {
-        city : "Islamabad",
+        city: "Islamabad",
         country: "pakistan"
     }
 };
@@ -829,4 +829,44 @@ let student = {
 console.log(student)
 console.log(student.subjects[1]);
 console.log(student.address["country"]);
+
+
+
+
+
+// Array of object
+let class2 = [
+    {
+        name:"Ali",
+        age:20,
+        city:"Karachi",
+        isMaried : false,
+    },
+    {
+        name:"Saad",
+        age:21,
+        city:"Lahore",
+        isMaried : false,
+    },
+    {
+        name:"Sara",
+        age:23,
+        city:"KPK",
+        isMaried : true,
+    }
+]
+
+console.log(Object.values(class2[1]));
+class2[2].name = "Maaz"
+console.log(class2[2]);
+class2[2].city = "Islamabad"
+console.log(class2);
+
+class2.unshift({
+    name : "mahnoor",
+    age: 25,
+    city:"karachi"
+})
+console.log(class2);
+console.log(class2.slice(2,4));
 
