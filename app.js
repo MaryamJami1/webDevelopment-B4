@@ -837,22 +837,22 @@ console.log(student.address["country"]);
 // Array of object
 let class2 = [
     {
-        name:"Ali",
-        age:20,
-        city:"Karachi",
-        isMaried : false,
+        name: "Ali",
+        age: 20,
+        city: "Karachi",
+        isMaried: false,
     },
     {
-        name:"Saad",
-        age:21,
-        city:"Lahore",
-        isMaried : false,
+        name: "Saad",
+        age: 21,
+        city: "Lahore",
+        isMaried: false,
     },
     {
-        name:"Sara",
-        age:23,
-        city:"KPK",
-        isMaried : true,
+        name: "Sara",
+        age: 23,
+        city: "KPK",
+        isMaried: true,
     }
 ]
 
@@ -863,10 +863,170 @@ class2[2].city = "Islamabad"
 console.log(class2);
 
 class2.unshift({
-    name : "mahnoor",
+    name: "mahnoor",
     age: 25,
-    city:"karachi"
+    city: "karachi"
 })
 console.log(class2);
-console.log(class2.slice(2,4));
+console.log(class2.slice(2, 4));
 
+
+
+
+
+// function defination
+
+
+function paanilao() {
+    let paani = "garm"
+
+    if (paani == "thanda") {
+        console.log("ye lain paani");
+    } else {
+        console.log("paani garm h");
+    }
+}
+
+paanilao()
+
+
+
+
+
+
+// object
+let colors = {
+    color1: "red",
+    color2: "orange",
+    color3: "black"
+}
+
+for (let key in colors) {
+    console.log(`${key} : ${colors[key]}`);
+}
+
+// array
+let fruits7 = ["Apple", "Mango", "Banana"];
+
+for (let index in fruits7) {
+    console.log(fruits7[index]);
+}
+
+
+
+let students6 = [
+    {
+        name: "Ali",
+        age: 20
+    },
+    {
+        name: "Ahmed",
+        age: 21
+    },
+    {
+        name: "Sara",
+        age: 19
+    }
+];
+
+for (let index in students6) {
+    console.log(students6[index].name);
+}
+
+
+
+
+paanilao()
+
+
+
+
+
+
+
+
+// // declare   
+// function greet2(parameters){
+//     console.log("hello students!");
+// }
+
+
+// //function calling
+// // //// function  invoke
+// greet2(argument)
+
+
+// addition 
+//         //parameters
+
+
+
+function add(a, b, c) {
+   let funcResult =   a + b + c;
+   return funcResult
+}
+
+let final = add(20, 35, 40)
+console.log(final);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//argument
+// console.log(funcResult);
+
+
+// // voting function
+// function voting(age) {
+//     if (age >= 18) {
+//         console.log("voting");
+//     } else {
+//         console.log("not voting");
+//     }
+// }
+
+
+
+// voting(20)
+// voting(18)
+// voting(12)
+// voting(85)
+// voting(10)
+
+// let student2 = {
+//     city: "",
+//     age: 20,
+
+//     greet: function(name , city) {
+//         console.log("Hello " +  name); 
+//         student2.city = city
+//         console.log(student2.city);
+//     }
+// };
+
+// console.log(student2.name);//  ali   1 
+// student2.greet("ali" , "lahore" );//  3
+// student2.greet("fatima" , "karachi");//  3
+
+
+// default parametrs
+function test (name = "student"){
+    console.log("hello " + name);
+} 
+
+test("ali")
+test()
+test("sara")
