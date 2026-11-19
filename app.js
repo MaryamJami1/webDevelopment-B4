@@ -1064,3 +1064,30 @@ button.addEventListener("click", function () {
 
 
 
+
+
+
+
+
+let box = document.getElementById("hover")
+
+box.addEventListener("mouseover" , function () {
+    box.style.backgroundColor = "red";
+   
+})
+
+box.addEventListener("mouseout" , function () {
+  box.style.backgroundColor = "blue";
+    
+})
+
+
+
+
+let input = document.getElementById("user")
+// console.log(input);
+input.addEventListener("keydown" , function(event){
+  console.log(event.key);
+})
+
+// event
