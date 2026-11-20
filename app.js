@@ -1,3 +1,6 @@
+import {add , sub} from "./calculator.js"
+
+
 // // console.log("Maryam");
 // // console.log(20 + 20);
 
@@ -1063,7 +1066,6 @@ button.addEventListener("click", function () {
 })
 
 
-
 let box = document.getElementById("hover")
 
 box.addEventListener("mouseover", function () {
@@ -1098,3 +1100,9 @@ let input2 = document.getElementById("city")
 input2.addEventListener("keyup", function(event){
   console.log(event.key);
 })
+
+
+
+
+console.log(add(2 , 3));
+console.log(sub(6 , 4));
