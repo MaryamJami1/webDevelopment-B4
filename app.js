@@ -1047,47 +1047,54 @@ let button = document.getElementById("btn");
 console.log(button);
 
 button.addEventListener("click", function () {
-    Swal.fire({
-        title: "m nachta hun tm bhi nacho!",
-        width: 400,
-        padding: "1.5em",
-        color: "#ec3289",
-        background: "#fff url(https://media.tenor.com/pmWK9icjFVEAAAAM/monkey-dance-dancing.gif)",
-        backdrop: `
+  Swal.fire({
+    title: "m nachta hun tm bhi nacho!",
+    width: 400,
+    padding: "1.5em",
+    color: "#ec3289",
+    background: "#fff url(https://media.tenor.com/pmWK9icjFVEAAAAM/monkey-dance-dancing.gif)",
+    backdrop: `
     rgba(123, 0, 98, 0.4)
     url("https://www.picgifs.com/glitter-gifs/l/lines/picgifs-lines-8131169.gif")
     left top
     no-repeat
   `
-    })
+  })
 })
-
-
-
-
-
 
 
 
 let box = document.getElementById("hover")
 
-box.addEventListener("mouseover" , function () {
-    box.style.backgroundColor = "red";
-   
+box.addEventListener("mouseover", function () {
+  box.style.backgroundColor = "red";
+
 })
 
-box.addEventListener("mouseout" , function () {
+box.addEventListener("mouseout", function () {
   box.style.backgroundColor = "blue";
-    
+
 })
 
 
-
+let userName = ""
 
 let input = document.getElementById("user")
 // console.log(input);
-input.addEventListener("keydown" , function(event){
-  console.log(event.key);
+input.addEventListener("keydown", function (event) {
+  userName += event.key
+})
+let subBtn = document.getElementById("submit")
+subBtn.addEventListener("click", function () {
+  console.log(userName);
 })
 
+
 // event
+
+let input2 = document.getElementById("city")
+// console.log(input2);
+
+input2.addEventListener("keyup", function(event){
+  console.log(event.key);
+})
