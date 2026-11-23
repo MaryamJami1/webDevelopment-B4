@@ -1106,3 +1106,29 @@ input2.addEventListener("keyup", function(event){
 
 console.log(add(2 , 3));
 console.log(sub(6 , 4));
+
+
+
+// foreach
+let fruits = ["apple" , "mango" , "banana" , "orange" , "garpes"]
+
+fruits.forEach((elem , i)=>{
+  console.log(`${i}: ${elem}`);
+})
+
+
+// Map()
+
+let numbers = [10, 20, 30, 40];
+
+let result = numbers.map((num) => {
+    return num * 2;
+});
+
+console.log(result); 
+
+
+
+
+// document.write failed to excute
+// common js
