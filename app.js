@@ -1,4 +1,4 @@
-import {add , sub} from "./calculator.js"
+import { add, sub } from "./calculator.js"
 
 
 // // console.log("Maryam");
@@ -1097,22 +1097,22 @@ subBtn.addEventListener("click", function () {
 let input2 = document.getElementById("city")
 // console.log(input2);
 
-input2.addEventListener("keyup", function(event){
+input2.addEventListener("keyup", function (event) {
   console.log(event.key);
 })
 
 
 
 
-console.log(add(2 , 3));
-console.log(sub(6 , 4));
+console.log(add(2, 3));
+console.log(sub(6, 4));
 
 
 
 // foreach
-let fruits = ["apple" , "mango" , "banana" , "orange" , "garpes"]
+let fruits = ["apple", "mango", "banana", "orange", "garpes"]
 
-fruits.forEach((elem , i)=>{
+fruits.forEach((elem, i) => {
   console.log(`${i}: ${elem}`);
 })
 
@@ -1122,13 +1122,54 @@ fruits.forEach((elem , i)=>{
 let numbers = [10, 20, 30, 40];
 
 let result = numbers.map((num) => {
-    return num * 2;
+  return num * 2;
 });
 
-console.log(result); 
+console.log(result);
 
 
 
 
 // document.write failed to excute
 // common js
+
+
+
+
+
+
+// sychronous programming
+// console.log("Start");
+// console.log("Data fetching...."); ///time consuming
+// console.log("End");
+
+
+// // asychronous programming
+// console.log("start");
+
+// setTimeout(() => {
+//   console.log("Data fetching....")
+// }, 3000)
+
+// console.log("End");
+
+
+
+// setInterval(() => {
+//   console.log("i am interval!");
+
+// }, 2000);
+
+let count = 0;
+
+let myInterval = setInterval(function () {
+  count++
+  if (count <= 5) {
+
+    console.log("hello i am interval!");
+  } else {
+    clearInterval(myInterval)
+  }
+
+}, 1000);
+
