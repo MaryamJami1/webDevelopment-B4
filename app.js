@@ -1160,16 +1160,226 @@ console.log(result);
 
 // }, 2000);
 
-let count = 0;
+// let count = 0;
 
-let myInterval = setInterval(function () {
-  count++
-  if (count <= 5) {
+// let myInterval = setInterval(function () {
+//   count++
+//   if (count <= 5) {
 
-    console.log("hello i am interval!");
-  } else {
-    clearInterval(myInterval)
-  }
+//     console.log("hello i am interval!");
+//   } else {
+//     clearInterval(myInterval)
+//   }
 
-}, 1000);
+// }, 1000);
 
+
+
+
+// let myPromise = new Promise(function (resolve, reject) {
+
+//   setTimeout(function () {
+
+//     let success = true;
+
+//     if (success) {
+//       resolve("Task Completed");
+//     }
+//     else {
+//       reject("Task Failed");
+//     }
+
+//   }, 3000);
+  
+
+
+// });
+
+// console.log(myPromise);//pending
+
+// myPromise
+//   .then(function (result) {
+
+//     console.log(result);
+
+//   })
+//   .catch(function (error) {
+
+//     console.log(error);
+
+//   });
+// // then 
+// catch
+
+setTimeout(() => {
+  console.log(myPromise);
+}, 5000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function breakfast() {
+
+//   return new Promise(function (resolve) {
+
+//     resolve("Breakfast Done");
+
+//   });
+
+// }
+
+// function cleanRoom() {
+
+//   return new Promise(function (resolve) {
+
+//     resolve("Room Cleaned");
+
+//   });
+
+// }
+
+// function homework() {
+
+//   return new Promise(function (resolve) {
+
+//     resolve("Homework Done");
+
+//   });
+
+// }
+
+// breakfast()
+//   .then(function (result) {
+
+//     console.log(result);
+
+//     return cleanRoom();
+
+//   })
+//   .then(function (result) {
+
+//     console.log(result);
+
+//     return homework();
+
+//   })
+//   .then(function (result) {
+
+//     console.log(result);
+
+//   })
+//   .catch(function (error) {
+
+//     console.log(error);
+
+//   });
+
+
+
+
+
+
+  function breakfast() {
+
+    return new Promise(function(resolve) {
+
+        resolve("Breakfast Done");
+
+    });
+    
+
+}
+
+function cleanRoom() {
+
+    return new Promise(function(resolve) {
+
+        resolve("Room Cleaned");
+
+    });
+
+}
+
+function homework() {
+
+    return new Promise(function(resolve) {
+
+        resolve("Homework Done");
+
+    });
+
+}
+
+
+async function completeTasks() {
+
+        let result1 =  await breakfast();
+        console.log(result1);
+
+
+        let result2 = await cleanRoom();
+        console.log(result2);
+
+
+        let result3 = await homework();
+        console.log(result3);
+
+}
+
+completeTasks(); //async
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let myPromise = new Promise(function(resolve, reject) {
+
+//     setTimeout(function() {
+
+//         resolve("Data Loaded");
+
+//     }, 3000);
+
+// })
+// // myPromise.then(()=>{
+  
+// //     let result = await myPromise;
+
+// //     console.log(result);
+// // })
+
+
+// async function getData() {
+
+//     let result = await myPromise;
+
+//     console.log(result);
+
+// }
+
+// getData();
